@@ -333,3 +333,11 @@ function invert(array) {
 const countSheep = function(num) {
   return [...Array(num).keys()].reduce((res, i) => res + (i + 1) + ' sheep...', '');
 }
+
+const countSheep = function(num) {
+  let result = '';
+  for (let i = 1; i <= num; i++) {
+    result += i.toString() + ' sheep...';
+  }
+  return result;
+}
