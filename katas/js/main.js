@@ -314,3 +314,7 @@ function doubleChar(str) {
 function invert(array) {
   return array.map( x => x === 0 ? x : -x);
 }
+
+function invert(array) {
+  return array.map(i => 0 - i);
+}
