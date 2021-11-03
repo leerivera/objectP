@@ -308,3 +308,6 @@ function doubleChar(str) {
     return c + c;
   }).join("");
 }
+
+// 8kyu invert values
+//Given a set of numbers, return the additive inverse of each. Each positive becomes negatives, and the negatives become positives.
