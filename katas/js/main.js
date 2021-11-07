@@ -293,3 +293,4 @@ function solution(s){
 
 // 8kyu double char
 // Given a string, you have to return a string in which each character (case-sensitive) is repeated once.
+let doubleChar =(str) => str.split('').map(x=> x+x).join('')
