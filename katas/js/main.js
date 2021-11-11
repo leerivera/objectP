@@ -277,3 +277,9 @@ function isPalindrome(line) {
 
   return true;
 }
+
+//8kyu reversed string
+
+function solution(str){
+  str.split('').reverse('').join('')
+}
