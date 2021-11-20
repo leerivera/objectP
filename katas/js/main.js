@@ -42,12 +42,12 @@ function Stopwatch(){
 
     };
 
-    // this.reset = function() {
-    //     startTime = null;
-    //     endTime = null;
-    //     running = null;
-    //     duration = 0;
-    // }
+    this.reset = function() {
+        startTime = null;
+        endTime = null;
+        running = null;
+        duration = 0;
+    }
 
 }
 
