@@ -208,3 +208,6 @@ function sumStr(a,b){
 
 // Assume the test input string is always a valid string. For example, the test input may be "1 year old" or "5 years old". The first character in the string is always a numb
 let getAge=(inputString)=>Number(inputString.split("")[0] )
+function getAge(inputString){
+  return parseInt(inputString);
+}
