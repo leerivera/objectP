@@ -146,11 +146,11 @@ var birds = [
   'Pilgrim',
   'Toulouse',
   'Blue Swedish' ]
-// const gooseFilter = (birds) => {
-//   const geese = new Set(['African', 'Roman Tufted', 'Toulouse', 'Pilgrim', 'Steinbacher'])
+const gooseFilter = (birds) => {
+  const geese = new Set(['African', 'Roman Tufted', 'Toulouse', 'Pilgrim', 'Steinbacher'])
 
-//   return birds.filter((bird) => !geese.has(bird))
-// }
+  return birds.filter((bird) => !geese.has(bird))
+}
 
 // Function Export
 module.exports = gooseFilter
