@@ -109,13 +109,13 @@ function getCount(input) {
   return vowelsCount;
 }
 // thinkful logic drills traffic light kata
-// const updateLight = current => {
-//   return {
-//     red: 'green',
-//     yellow: 'red',
-//     green: 'yellow'
-//   }[current];
-// }
+const updateLight = current => {
+  return {
+    red: 'green',
+    yellow: 'red',
+    green: 'yellow'
+  }[current];
+}
 
 function updateLight(current) {
   switch (current) {
