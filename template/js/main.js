@@ -88,9 +88,9 @@ function century(year) {
   return Math.ceil(year / 100)
 }
 
-function yum() {
-  console.log("yum")
-}
+// function yum() {
+//   console.log("yum")
+// }
 
 function getCount(input) {
   var vowelsCount = 0;
