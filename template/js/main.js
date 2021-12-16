@@ -69,14 +69,14 @@ function removeSmallest(numbers) {
 // After 3rd Year -->
 //   P = 1128.30
 
-function calculateYears(principal, interest, tax, desired) {
-  let years = 0;
-  while (principal < desired) {
-    principal += principal * interest * (1 - tax);
-    years++;
-  }
-  return years;
-}
+// function calculateYears(principal, interest, tax, desired) {
+//   let years = 0;
+//   while (principal < desired) {
+//     principal += principal * interest * (1 - tax);
+//     years++;
+//   }
+//   return years;
+// }
 
 
 // The first century spans from the year 1 up to and including the year 100, the second century 
