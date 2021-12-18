@@ -38,15 +38,15 @@ function filter_list(l) {
 
 
 
-function removeSmallest(numbers) {
+// function removeSmallest(numbers) {
 
-  numbers = [17, 34, 678]
-  let indexOfMin = numbers.indexOf(Math.min(...numbers));
+//   numbers = [17, 34, 678]
+//   let indexOfMin = numbers.indexOf(Math.min(...numbers));
 
-  return [...numbers.slice(0, indexOfMin), ...numbers.slice(indexOfMin + 1)];
-}
+//   return [...numbers.slice(0, indexOfMin), ...numbers.slice(indexOfMin + 1)];
+// }
 
-removeSmallest()
+// removeSmallest()
 
 // Mr. Scrooge has a sum of money 'P' that he wants to invest. Before he does, he wants to know how many years 'Y' this sum 'P' has to be kept in the bank in order for it to amount to a desired sum of money 'D'.
 
