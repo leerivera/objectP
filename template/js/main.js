@@ -423,3 +423,8 @@ function maps(x){
 
 // makeNegative(1); // return -1 makeNegative(-5); // return -5 makeNegative(0); // return 0
 
+function makeNegative(num) {
+  return (num > 0) ? parseInt(`-${num}`,10) : num
+
+}
+
