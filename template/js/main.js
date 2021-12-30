@@ -387,3 +387,6 @@ function twoSort(array) {
 function twoSort(array) {
   return [...array.reduce((min, str) => min < str ? min : str)].join("***");
 }
+
+
+// 8kyu lost without a map double the value of each el in an array
