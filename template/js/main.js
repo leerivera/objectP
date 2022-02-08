@@ -383,3 +383,7 @@ twoSort = (s) => s.sort()[0].split('').join('***')
 function twoSort(array) {
   return [...array.reduce((min, str) => min < str ? min : str)].join("***");
 }
+
+function twoSort(array) {
+  return [...array.reduce((min, str) => min < str ? min : str)].join("***");
+}
