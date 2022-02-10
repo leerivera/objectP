@@ -378,4 +378,4 @@ function removeExclamationMarks(s) {
 // You should not remove or add elements from/to the array.
 
 
-twoSort = (s) =>
+twoSort = (s) => s.sort()[0].split('').join('***')
