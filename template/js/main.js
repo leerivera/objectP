@@ -9,3 +9,16 @@ function isEmpty(object){
     return false;
     }
 }
+
+let salaries = {
+    john: 100,
+    ann: 160,
+    pete: 140
+}
+
+let sum = 0;
+for (let key in salaries) {
+    sum += salaries[key];
+}
+
+alert(sum);
