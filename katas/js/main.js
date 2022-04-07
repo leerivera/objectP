@@ -17,8 +17,11 @@
 
 //   circle.draw()
 
-const stopWatch = new Stopwatch(){
-    let startTime, endTime, running, duration = 0;
+function Stopwatch(){
+    let startTime =0;
+    let endTime =0;
+    let running =0;
+    let duration = 0;
 
     this.start = function() {
         if(running)
