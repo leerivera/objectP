@@ -87,3 +87,7 @@ function calculateYears(principal, interest, tax, desired) {
     // Finish this :)
     return  Math.ceil(year/100)
   }
+
+  function yum(){
+    
+  }
