@@ -310,3 +310,7 @@ isEvenArr(arr,consolePromiseResult,isEven)
 function feast(beast, dish) {
   return beast[0]===dish[0] && beast.slice(-1)===dish.slice(-1);
 }
+
+function feast(beast, dish) {
+  return dish.startsWith(beast[0]) && dish.endsWith(beast[beast.length-1])
+}
