@@ -306,3 +306,7 @@ for(let i = 0; i < arr.length;i++){
 }
 }
 isEvenArr(arr,consolePromiseResult,isEven)
+
+function feast(beast, dish) {
+  return beast[0]===dish[0] && beast.slice(-1)===dish.slice(-1);
+}
