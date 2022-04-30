@@ -91,3 +91,20 @@ function calculateYears(principal, interest, tax, desired) {
   function yum(){
      console.log("yum")
   }
+
+  function getCount(input) {
+    var vowelsCount = 0;
+    var inputLetters = input.split("");
+    
+    const vowels = ["a","e","i","o","u"];
+    
+    vowels.forEach(function(vowel) {
+      inputLetters.forEach(function(inpLetter) {
+        if (inpLetter === vowel) {
+          vowelsCount++;
+        }
+      });
+    });
+    
+    return vowelsCount;
+  }
