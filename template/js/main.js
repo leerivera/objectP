@@ -108,3 +108,5 @@ function calculateYears(principal, interest, tax, desired) {
     
     return vowelsCount;
   }
+
+  console.log("done")
