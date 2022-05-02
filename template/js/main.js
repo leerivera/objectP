@@ -36,14 +36,14 @@
 //   return l.filter( str => typeof str != 'string');
 //   }
 
- 
+
 
 function removeSmallest(numbers) {
-    
-    numbers = [17, 34, 678]
-    let indexOfMin = numbers.indexOf(Math.min(...numbers));
-    
-    return [...numbers.slice(0, indexOfMin), ...numbers.slice(indexOfMin + 1)];
+
+  numbers = [17, 34, 678]
+  let indexOfMin = numbers.indexOf(Math.min(...numbers));
+
+  return [...numbers.slice(0, indexOfMin), ...numbers.slice(indexOfMin + 1)];
 }
 
 removeSmallest()
@@ -70,60 +70,92 @@ removeSmallest()
 //   P = 1128.30
 
 function calculateYears(principal, interest, tax, desired) {
-    let years = 0;
-    while (principal < desired) {
-      principal += principal * interest * (1 - tax);
-      years++;
-    }
-    return years;
+  let years = 0;
+  while (principal < desired) {
+    principal += principal * interest * (1 - tax);
+    years++;
   }
+  return years;
+}
 
 
-  // The first century spans from the year 1 up to and including the year 100, the second century 
-  // - from the year 101 up to and including the year 200, etc.
+// The first century spans from the year 1 up to and including the year 100, the second century 
+// - from the year 101 up to and including the year 200, etc.
 
 
-  function century(year) {
-    // Finish this :)
-    return  Math.ceil(year/100)
-  }
+function century(year) {
+  // Finish this :)
+  return Math.ceil(year / 100)
+}
 
-  function yum(){
-     console.log("yum")
-  }
+function yum() {
+  console.log("yum")
+}
 
-  function getCount(input) {
-    var vowelsCount = 0;
-    var inputLetters = input.split("");
-    
-    const vowels = ["a","e","i","o","u"];
-    
-    vowels.forEach(function(vowel) {
-      inputLetters.forEach(function(inpLetter) {
-        if (inpLetter === vowel) {
-          vowelsCount++;
-        }
-      });
+function getCount(input) {
+  var vowelsCount = 0;
+  var inputLetters = input.split("");
+
+  const vowels = ["a", "e", "i", "o", "u"];
+
+  vowels.forEach(function (vowel) {
+    inputLetters.forEach(function (inpLetter) {
+      if (inpLetter === vowel) {
+        vowelsCount++;
+      }
     });
-    
-    return vowelsCount;
-  }
-   // thinkful logic drills traffic light kata
-  const updateLight = current => {
-    return {
-      red: 'green',
-      yellow: 'red',
-      green: 'yellow'
-    }[current];
-  }
+  });
 
-  function updateLight(current) {
-    switch (current) {
-      case 'green':
-        return 'yellow';
-      case 'yellow':
-        return 'red';
-      default:
-        return 'green';
-    }
+  return vowelsCount;
+}
+// thinkful logic drills traffic light kata
+const updateLight = current => {
+  return {
+    red: 'green',
+    yellow: 'red',
+    green: 'yellow'
+  }[current];
+}
+
+function updateLight(current) {
+  switch (current) {
+    case 'green':
+      return 'yellow';
+    case 'yellow':
+      return 'red';
+    default:
+      return 'green';
   }
+}
+
+//   Write a function that takes a list of strings as an argument and returns a filtered list containing the same elements but with the 'geese' removed.
+
+// The geese are any strings in the following array, which is pre-populated in your
+
+// Long Solution
+
+var birds = [ 'Mallard',
+  'Hook Bill',
+  'African',
+  'Crested',
+  'Pilgrim',
+  'Toulouse',
+  'Blue Swedish' ]
+const gooseFilter = (birds) => {
+  const geese = new Set(['African', 'Roman Tufted', 'Toulouse', 'Pilgrim', 'Steinbacher'])
+
+  return birds.filter((bird) => !geese.has(bird))
+}
+
+// Function Export
+module.exports = gooseFilter
+
+function gooseFilter(birds) {
+  var geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
+  return birds.filter(b => !geese.includes(b));
+};
+
+function gooseFilter (birds) {
+  var geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
+  return birds.filter( bird => geese.indexOf(bird) < 0 );
+};
