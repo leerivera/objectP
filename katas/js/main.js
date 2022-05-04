@@ -50,3 +50,12 @@ function Stopwatch(){
     }
 
 }
+
+function newFilter(){
+    let cars = ["ford", "buick", "BMW", "Telsa"]
+    let electricCar = ["Telsa"]
+     bestCar = cars.filter(c => !electricCar.includes(c))
+    console.log(bestCar)
+}
+
+newFilter()
