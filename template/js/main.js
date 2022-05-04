@@ -185,3 +185,9 @@ module.exports = findDifference
 function find_difference(a, b) {
   return Math.abs(a.reduce((previous, current) => previous * current) - b.reduce((previous, current) => previous * current));
 }
+
+// This kata is about multiplying a given number by eight if it 
+// is an even number and by nine otherwise.
+function simpleMultiplication(n){
+  return n % 2 ? n * 9 : n * 8;
+}
