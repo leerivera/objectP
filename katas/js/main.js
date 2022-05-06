@@ -51,11 +51,18 @@ function Stopwatch(){
 
 }
 
+
+
 function newFilter(){
-    let cars = ["ford", "buick", "BMW", "Telsa"]
-    let electricCar = ["Telsa"]
-     bestCar = cars.filter(c => !electricCar.includes(c))
-    console.log(bestCar)
+    let arr = ["bear", "cat"]
+    let bear = ["bear"]
+     newArr= arr.filter(b => !bear.includes(b))
+    console.log(newArr)
 }
 
 newFilter()
+// nath min and max
+
+const min = (list) => Math.min(...list);
+const max = (list) => Math.max(...list);
+
