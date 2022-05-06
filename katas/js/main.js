@@ -66,3 +66,12 @@ newFilter()
 const min = (list) => Math.min(...list);
 const max = (list) => Math.max(...list);
 
+// another solution using module exports
+
+const min = list => Math.min(...list)
+
+const max = list => Math.max(...list)
+
+// Function Export
+module.exports = { min, max }
+
