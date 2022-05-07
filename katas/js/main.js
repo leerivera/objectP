@@ -93,3 +93,5 @@ function squareSum(numbers) {
     }
     return sum
 }
+
+console.log("done")
