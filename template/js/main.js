@@ -191,3 +191,9 @@ function find_difference(a, b) {
 function simpleMultiplication(n){
   return n % 2 ? n * 9 : n * 8;
 }
+
+// is even determine if a number is even
+
+function isEven(n){
+  return n % 2 == 0
+}
