@@ -194,3 +194,8 @@ function basicOp(operation, value1, value2)
   return result;
 }
 
+//convert number to string sum it and return it back as a string
+
+function sumStr(a,b){
+    return String(Number(a) +Number(b));
+}
