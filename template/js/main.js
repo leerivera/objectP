@@ -226,3 +226,5 @@ function finalGrade (exam, projects) {
   if(exam > 50 & projects >= 2) return 75;
   return 0;
 }
+
+console.log("check")
