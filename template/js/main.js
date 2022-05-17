@@ -261,3 +261,7 @@ const quarterOf = (month) => {
   return month < 4 ? 1 : month < 7 ? 2 : month < 10 ? 3 : 4;
   
 }
+
+// calculate avg of an array
+
+let find_average = (array) => array.length > 0 ? array.reduce((acc,c)=> acc + c, 0)/array.length : 0
