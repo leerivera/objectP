@@ -229,9 +229,8 @@ function finalGrade (exam, projects) {
 
 console.log("check")
 
-unction finalGrade (exam, projects) {
-  if(exam > 90 || projects > 10) return 100;
-  if(exam > 75 & projects >= 5) return 90;
-  if(exam > 50 & projects >= 2) return 75;
-  return 0;
-}
+// remove first and last characters of String. using slice on this one
+// -1 removes last character
+function removeChar(str){
+  return str.slice(1, str.length -1);
+};
