@@ -314,3 +314,8 @@ function feast(beast, dish) {
 function feast(beast, dish) {
   return dish.startsWith(beast[0]) && dish.endsWith(beast[beast.length-1])
 }
+
+function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+  // code goes here
+  return laLigaGoals + copaDelReyGoals + championsLeagueGoals
+}
