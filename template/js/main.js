@@ -439,3 +439,7 @@ function makeNegative(num) {
 function fakeBin(x) {
   return x.replace(/\d/g, d => d < 5 ? 0 : 1);
 }
+
+function fakeBin(x){
+  return x.split('').map((num) => num > 4 ? 1 : 0).join('');
+}
